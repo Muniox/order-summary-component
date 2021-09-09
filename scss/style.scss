@@ -127,10 +127,23 @@ body {
 // }
 
 /*
+********************335px*********************
+*/
+@media only screen and (max-width: 335px ) {
+    body {
+        background-image: url(../../images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover 30%;
+    }
+}
+
+
+
+/*
 ********************375px*********************
 */
 
-@media only screen and (max-width: 470px ) {
+@media only screen and (min-width: 336px ) {
     body {
         background-image: url(../../images/pattern-background-mobile.svg);
         background-repeat: no-repeat;
