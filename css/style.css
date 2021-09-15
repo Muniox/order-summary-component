@@ -127,7 +127,7 @@ body {
 */
 @media only screen and (max-width: 335px) {
   body {
-    background-image: url(../../images/pattern-background-mobile.svg);
+    background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover 30%;
   }
@@ -138,7 +138,7 @@ body {
 */
 @media only screen and (min-width: 336px) {
   body {
-    background-image: url(../../images/pattern-background-mobile.svg);
+    background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -149,7 +149,7 @@ body {
 */
 @media only screen and (min-width: 471px) {
   body {
-    background-image: url(../../images/pattern-background-desktop.svg);
+    background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: 100% 50%;
   }

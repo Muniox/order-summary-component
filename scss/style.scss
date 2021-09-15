@@ -16,111 +16,107 @@ $dark-blue: hsl(223, 47%, 23%);
 ***********************************************
 */
 body {
-    font-family: 'Red Hat Display', sans-serif;
-    height: 100vh;
-    font-size: 16px;
-    background-color: $pr-pale-blue;
-    display: grid;
-    grid-auto-rows: max-content;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-    color: $dark-blue;
-    min-height: 650px;
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  font-size: 16px;
+  background-color: $pr-pale-blue;
+  display: grid;
+  grid-auto-rows: max-content;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  color: $dark-blue;
+  min-height: 650px;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 
 .card {
-    width: 335px;
-    // border: 1px solid black;
-    text-align: center;
+  width: 335px;
+  // border: 1px solid black;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 5px 20px -15px hsl(245, 75%, 52%);
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 25px;
+    margin: 30px 0 15px 0;
+    font-weight: 900;
+  }
+
+  &__text {
+    display: inline-block;
+    width: 80%;
+    line-height: 25px;
+    font-size: 16px;
+    color: $desaturated-blue;
+  }
+
+  &__plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: $very-pale-blue;
+    height: 80px;
+    width: 85%;
+    margin: 20px auto;
     border-radius: 15px;
-    overflow: hidden;
-    margin: auto;
-    background-color: hsl(0,0%,98%);
-    box-shadow: 0 5px 20px -15px hsl(245, 75%, 52%);
 
+    span {
+      color: $desaturated-blue;
+    }
+  }
 
-    &__image {
-        width: 100%;
-        height: auto;
-    }
+  &__link {
+    color: $pr-bright-blue;
+  }
 
-    &__title {
-        font-size: 25px;
-        margin: 30px 0 15px 0;
-        font-weight: 900;
-    }
+  &__link-item:hover {
+    text-decoration: none;
+    color: hsl(245, 83%, 68);
+  }
 
-    &__text {
-        display: inline-block;
-        width: 80%;
-        line-height: 25px;
-        font-size: 16px;
-        color: $desaturated-blue;
-    }
+  &__button {
+    display: inline-block;
+    width: 85%;
+    height: 50px;
+    background: $pr-bright-blue;
+    border: none;
+    border-radius: 15px;
+    color: $very-pale-blue;
+    font-weight: bold;
+    box-shadow: 0 15px 25px -8px hsla(245, 75%, 52%, 0.4);
+    cursor: pointer;
+  }
+  &__button:hover {
+    background: hsl(245, 83%, 68);
+  }
 
-    &__plan {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background: $very-pale-blue;
-        height: 80px;
-        width: 85%;
-        margin: 20px auto;
-        border-radius: 15px;
-        
+  &__cancel-link {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 20px auto;
+    color: $desaturated-blue;
+  }
 
-        span {
-            color: $desaturated-blue;
-        }
-    }
-
-    &__link {
-        color: $pr-bright-blue;
-    }
-
-    &__link-item:hover {
-        text-decoration: none;
-        color: hsl(245, 83%, 68);
-    }
-
-    &__button {
-        display: inline-block;
-        width: 85%;
-        height: 50px;
-        background: $pr-bright-blue;
-        border: none;
-        border-radius: 15px;
-        color: $very-pale-blue;
-        font-weight: bold;
-        box-shadow: 0 15px 25px -8px hsla(245, 75%, 52%, 0.4);
-        cursor: pointer;
-    }
-    &__button:hover {
-        background: hsl(245, 83%, 68);
-    }
-
-    &__cancel-link {
-        display: inline-block;
-        font-weight: bold;
-        font-size: 12px;
-        text-decoration: none;
-        margin: 20px auto;
-        color: $desaturated-blue
-    }
-    
-    &__cancel-link:hover {
-        color: $dark-blue;
-    }
+  &__cancel-link:hover {
+    color: $dark-blue;
+  }
 }
-
 
 // .attribution{
 //     align-self: end;
@@ -129,80 +125,63 @@ body {
 /*
 ********************335px*********************
 */
-@media only screen and (max-width: 335px ) {
-    body {
-        background-image: url(../../images/pattern-background-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: cover 30%;
-    }
+@media only screen and (max-width: 335px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover 30%;
+  }
 }
-
-
 
 /*
 ********************375px*********************
 */
 
-@media only screen and (min-width: 336px ) {
-    body {
-        background-image: url(../../images/pattern-background-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+@media only screen and (min-width: 336px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 
 /*
 ********************more than 375px*********************
 */
 
-@media only screen and (min-width: 471px ) {
-    body {
-        background-image: url(../../images/pattern-background-desktop.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 50%;
-    }
-    .card {
-        min-width: 450px;
-        height: 700px;
-        
-        &__title {
-            margin: 40px auto 20px auto;
-        }
+@media only screen and (min-width: 471px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+  }
+  .card {
+    min-width: 450px;
+    height: 700px;
 
-        &__text {
-            line-height: 30px;
-            font-size: 18px;
-            width: 85%;
-        }
-
-        &__plan {
-            height: 100px;
-            margin: 30px auto 30px auto;
-        }
+    &__title {
+      margin: 40px auto 20px auto;
     }
 
+    &__text {
+      line-height: 30px;
+      font-size: 18px;
+      width: 85%;
+    }
 
+    &__plan {
+      height: 100px;
+      margin: 30px auto 30px auto;
+    }
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution {
-    font-size: 11px;
-    text-align: center;
-    padding: 10px;
-  }
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+}
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+  color: hsl(228, 45%, 44%);
+}
