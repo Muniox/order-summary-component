@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover 30%;
+  background-size: 100% 30%;
 }
 
 * {
@@ -45,11 +45,11 @@ body {
   max-width: 37.22rem;
   // border: 1px solid black;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   overflow: hidden;
   margin: auto;
   background-color: hsl(0, 0%, 98%);
-  box-shadow: 0 5px 20px -15px hsl(245, 75%, 52%);
+  box-shadow: 0 0.5rem 2rem -1.5rem hsl(245, 75%, 52%);
   margin: 0 5%;
   min-width: 20rem;
 
@@ -77,7 +77,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: $very-pale-blue;
-    height: 80px;
+    height: 8rem;
     width: 85%;
     margin: 2rem auto;
     border-radius: 1.5rem;
@@ -122,7 +122,7 @@ body {
     border-radius: 1.5rem;
     color: $very-pale-blue;
     font-weight: 900;
-    box-shadow: 0 15px 25px -8px hsla(245, 75%, 52%, 0.4);
+    box-shadow: 0 1.5rem 2.5rem -0.8rem hsla(245, 75%, 52%, 0.4);
     cursor: pointer;
   }
   &__button:hover {
@@ -156,7 +156,7 @@ jest obsługiwany domyślnie
 ********************375px*********************
 */
 
-@media only screen and (min-width: 336px) {
+@media only screen and (min-width: 33.6rem) {
   body {
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ jest obsługiwany domyślnie
 ********************more than 375px*********************
 */
 
-@media only screen and (min-width: 471px) {
+@media only screen and (min-width: 47.1rem) {
   body {
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
@@ -184,26 +184,26 @@ jest obsługiwany domyślnie
     }
 
     &__text {
-      line-height: 30px;
-      font-size: 18px;
+      line-height: 3rem;
+      font-size: 1.8rem;
       width: 85%;
     }
 
     &__plan {
-      height: 100px;
-      margin: 30px auto 30px auto;
+      height: 10rem;
+      margin: 3rem auto 3rem auto;
     }
 
     &__plan-container {
-      gap: 30px;
+      gap: 3rem;
     }
   }
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .attribution a {

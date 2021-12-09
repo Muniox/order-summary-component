@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover 30%;
+  background-size: 100% 30%;
 }
 
 * {
@@ -41,12 +41,12 @@ body {
 .card {
   max-width: 37.22rem;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   overflow: hidden;
   margin: auto;
   background-color: #fafafa;
-  -webkit-box-shadow: 0 5px 20px -15px #3829e0;
-          box-shadow: 0 5px 20px -15px #3829e0;
+  -webkit-box-shadow: 0 0.5rem 2rem -1.5rem #3829e0;
+          box-shadow: 0 0.5rem 2rem -1.5rem #3829e0;
   margin: 0 5%;
   min-width: 20rem;
 }
@@ -81,7 +81,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: #f5f7ff;
-  height: 80px;
+  height: 8rem;
   width: 85%;
   margin: 2rem auto;
   border-radius: 1.5rem;
@@ -133,8 +133,8 @@ body {
   border-radius: 1.5rem;
   color: #f5f7ff;
   font-weight: 900;
-  -webkit-box-shadow: 0 15px 25px -8px rgba(56, 41, 224, 0.4);
-          box-shadow: 0 15px 25px -8px rgba(56, 41, 224, 0.4);
+  -webkit-box-shadow: 0 1.5rem 2.5rem -0.8rem rgba(56, 41, 224, 0.4);
+          box-shadow: 0 1.5rem 2.5rem -0.8rem rgba(56, 41, 224, 0.4);
   cursor: pointer;
 }
 
@@ -162,7 +162,7 @@ jest obsługiwany domyślnie
 /*
 ********************375px*********************
 */
-@media only screen and (min-width: 336px) {
+@media only screen and (min-width: 33.6rem) {
   body {
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@ jest obsługiwany domyślnie
 /*
 ********************more than 375px*********************
 */
-@media only screen and (min-width: 471px) {
+@media only screen and (min-width: 47.1rem) {
   body {
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
@@ -188,23 +188,23 @@ jest obsługiwany domyślnie
     margin: 4rem auto 2rem auto;
   }
   .card__text {
-    line-height: 30px;
-    font-size: 18px;
+    line-height: 3rem;
+    font-size: 1.8rem;
     width: 85%;
   }
   .card__plan {
-    height: 100px;
-    margin: 30px auto 30px auto;
+    height: 10rem;
+    margin: 3rem auto 3rem auto;
   }
   .card__plan-container {
-    gap: 30px;
+    gap: 3rem;
   }
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .attribution a {
