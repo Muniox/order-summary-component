@@ -124,7 +124,9 @@ body {
     font-weight: 900;
     box-shadow: 0 1.5rem 2.5rem -0.8rem hsla(245, 75%, 52%, 0.4);
     cursor: pointer;
+    font-size: 1.4rem;
   }
+
   &__button:hover {
     background: hsl(245, 83%, 68);
   }

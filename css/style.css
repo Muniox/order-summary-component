@@ -136,6 +136,7 @@ body {
   -webkit-box-shadow: 0 1.5rem 2.5rem -0.8rem rgba(56, 41, 224, 0.4);
           box-shadow: 0 1.5rem 2.5rem -0.8rem rgba(56, 41, 224, 0.4);
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .card__button:hover {
