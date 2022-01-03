@@ -211,4 +211,29 @@ jest obsługiwany domyślnie
 .attribution a {
   color: #3e52a3;
 }
+
+/******************************************/
+/*           IE Hacks   no-RWD            */
+/******************************************/
+_:-ms-lang(x),
+.ie10up, :root {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+_:-ms-lang(x),
+.ie10up,
+body {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: right;
+      justify-content: right;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
 /*# sourceMappingURL=style.css.map */
