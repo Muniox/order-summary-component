@@ -15,18 +15,24 @@ $dark-blue: hsl(223, 47%, 23%);
 /*
 ***********************************************
 */
+:root {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Red Hat Display', sans-serif;
-  height: 100vh;
-  font-size: 16px;
+  // height: 100vh;
   background-color: $pr-pale-blue;
   display: grid;
   grid-auto-rows: max-content;
   justify-content: center;
   align-content: center;
-  gap: 20px;
+  gap: 2rem;
   color: $dark-blue;
-  min-height: 650px;
+  min-height: 100vh;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
 }
 
 * {
@@ -36,14 +42,16 @@ body {
 }
 
 .card {
-  width: 335px;
+  max-width: 37.22rem;
   // border: 1px solid black;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   overflow: hidden;
   margin: auto;
   background-color: hsl(0, 0%, 98%);
-  box-shadow: 0 5px 20px -15px hsl(245, 75%, 52%);
+  box-shadow: 0 0.5rem 2rem -1.5rem hsl(245, 75%, 52%);
+  margin: 0 5%;
+  min-width: 20rem;
 
   &__image {
     width: 100%;
@@ -51,36 +59,53 @@ body {
   }
 
   &__title {
-    font-size: 25px;
-    margin: 30px 0 15px 0;
+    font-size: 2.5rem;
+    margin: 3rem 0 1.5rem 0;
     font-weight: 900;
   }
 
   &__text {
     display: inline-block;
     width: 80%;
-    line-height: 25px;
-    font-size: 16px;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
     color: $desaturated-blue;
   }
 
   &__plan {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: $very-pale-blue;
-    height: 80px;
+    height: 8rem;
     width: 85%;
-    margin: 20px auto;
-    border-radius: 15px;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    padding: 0 5%;
+    flex-wrap: wrap;
+  }
+
+  &__plan-text {
+    font-weight: 700;
+    font-size: 1.6rem;
 
     span {
+      font-weight: 500;
       color: $desaturated-blue;
     }
   }
 
+  &__plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 14.8rem;
+  }
+
   &__link {
     color: $pr-bright-blue;
+    font-weight: 900;
+    font-size: 1.6rem;
   }
 
   &__link-item:hover {
@@ -91,25 +116,27 @@ body {
   &__button {
     display: inline-block;
     width: 85%;
-    height: 50px;
+    height: 5rem;
     background: $pr-bright-blue;
     border: none;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     color: $very-pale-blue;
-    font-weight: bold;
-    box-shadow: 0 15px 25px -8px hsla(245, 75%, 52%, 0.4);
+    font-weight: 900;
+    box-shadow: 0 1.5rem 2.5rem -0.8rem hsla(245, 75%, 52%, 0.4);
     cursor: pointer;
+    font-size: 1.4rem;
   }
+
   &__button:hover {
     background: hsl(245, 83%, 68);
   }
 
   &__cancel-link {
     display: inline-block;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 900;
+    font-size: 1.4rem;
     text-decoration: none;
-    margin: 20px auto;
+    margin: 2.5rem auto;
     color: $desaturated-blue;
   }
 
@@ -124,20 +151,14 @@ body {
 
 /*
 ********************335px*********************
+jest obsługiwany domyślnie
 */
-@media only screen and (max-width: 335px) {
-  body {
-    background-image: url(../images/pattern-background-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover 30%;
-  }
-}
 
 /*
 ********************375px*********************
 */
 
-@media only screen and (min-width: 336px) {
+@media only screen and (min-width: 33.6rem) {
   body {
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
@@ -149,37 +170,42 @@ body {
 ********************more than 375px*********************
 */
 
-@media only screen and (min-width: 471px) {
+@media only screen and (min-width: 47.1rem) {
   body {
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: 100% 50%;
   }
   .card {
-    min-width: 450px;
-    height: 700px;
+    min-width: 45rem;
+    min-height: 70rem;
+    margin: 0;
 
     &__title {
-      margin: 40px auto 20px auto;
+      margin: 4rem auto 2rem auto;
     }
 
     &__text {
-      line-height: 30px;
-      font-size: 18px;
+      line-height: 3rem;
+      font-size: 1.8rem;
       width: 85%;
     }
 
     &__plan {
-      height: 100px;
-      margin: 30px auto 30px auto;
+      height: 10rem;
+      margin: 3rem auto 3rem auto;
+    }
+
+    &__plan-container {
+      gap: 3rem;
     }
   }
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .attribution a {
