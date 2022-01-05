@@ -1,4 +1,3 @@
 dodać poprawki do ie11
 
-sprawdzić czy bash powoduje problemy z deployem
-nadal nie wiem czy powoduje problem
+
