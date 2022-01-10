@@ -124,6 +124,10 @@ body {
   color: #756af1;
 }
 
+.card__link-item:visited {
+  color: #756af1;
+}
+
 .card__button {
   display: inline-block;
   width: 85%;
@@ -141,6 +145,14 @@ body {
 
 .card__button:hover {
   background: #756af1;
+}
+
+.card__button:active {
+  -webkit-transform: translate(0px, 2px);
+          transform: translate(0px, 2px);
+  width: 84%;
+  -webkit-box-shadow: 0 0.5rem 2rem 0.1rem rgba(56, 41, 224, 0.4);
+          box-shadow: 0 0.5rem 2rem 0.1rem rgba(56, 41, 224, 0.4);
 }
 
 .card__cancel-link {

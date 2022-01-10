@@ -113,6 +113,10 @@ body {
     color: hsl(245, 83%, 68);
   }
 
+  &__link-item:visited {
+    color: hsl(245, 83%, 68);
+  }
+
   &__button {
     display: inline-block;
     width: 85%;
@@ -129,6 +133,12 @@ body {
 
   &__button:hover {
     background: hsl(245, 83%, 68);
+  }
+
+  &__button:active {
+    transform: translate(0px, 2px);
+    width: 84%;
+    box-shadow: 0 0.5rem 2rem 0.1rem hsla(245, 75%, 52%, 0.4);
   }
 
   &__cancel-link {
