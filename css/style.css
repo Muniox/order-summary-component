@@ -181,6 +181,10 @@ jest obsługiwany domyślnie
     background-repeat: no-repeat;
     background-size: 100%;
   }
+  _:-ms-lang(x),
+  .ie10up, .card__plan-text {
+    margin-left: 1rem;
+  }
 }
 
 /*
@@ -211,6 +215,10 @@ jest obsługiwany domyślnie
   }
   .card__plan-container {
     gap: 3rem;
+  }
+  _:-ms-lang(x),
+  .ie10up, .card__plan-text {
+    margin-left: 3rem;
   }
 }
 
