@@ -1,3 +1,5 @@
-dodać poprawki do ie11
+- dodać poprawki do ie11
+- dodać klasę active do buttonu
+- zmienić link do Change :visited na taki sam kolor
 
 

@@ -174,7 +174,7 @@ jest obsługiwany domyślnie
 /*
 ********************more than 375px*********************
 */
-@media only screen and (min-width: 47.1rem) {
+@media only screen and (min-width: 29.4375em) {
   body {
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
