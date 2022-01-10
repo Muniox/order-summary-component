@@ -2,4 +2,7 @@
 - dodać klasę active do buttonu
 - zmienić link do Change :visited na taki sam kolor
 
+do zrobienia:
+- margin nie ma wpływu na IE w flexbox
+
 
