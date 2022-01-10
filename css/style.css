@@ -163,7 +163,7 @@ jest obsługiwany domyślnie
 /*
 ********************375px*********************
 */
-@media only screen and (min-width: 33.6rem) {
+@media only screen and (min-width: 21em) {
   body {
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
